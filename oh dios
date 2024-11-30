@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecos de la Mente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="game-intro">
+      <h1>Bienvenido a Ecos de la Mente</h1>
+      <p>Te despiertas en una habitación oscura. Explora y descubre los fragmentos de tu memoria...</p>
+      <button onclick="startGame()">Comenzar</button>
+    </div>
+    <div id="game-room" class="hidden">
+      <div id="room-description"></div>
+      <button id="explore-btn" onclick="explore()">Explorar</button>
+      <button id="speak-btn" onclick="speak()">Hablar</button>
+    </div>
+    <div id="game-over" class="hidden">
+      <h1>Has perdido la batalla contra tu mente...</h1>
+      <button onclick="restartGame()">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
